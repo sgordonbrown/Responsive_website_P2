@@ -1,9 +1,32 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
+* {
+	box-sizing: border-box;
+}
+  
+	body {
+  	font-family: 'Lato', sans-serif;
+  	color: #3a3a3a; 
+  	text-align: center;
+  	background-color: #edeaea;
+  	padding: 0;	
+}
 
+	h1 {
+		font-size: 1.5em;
+		color: #3a3a3a;		
+}
+	h2,
+	h3,
+	a {
+		font-size: 1em;
+		color: #4c4b4b;
+	}
 
-font-family: 'Lato', sans-serif;
+	
+
+}
 
 /* ================================= 
   Base Layout Styles
@@ -11,10 +34,36 @@ font-family: 'Lato', sans-serif;
 
 /* ---- Navigation ---- */
 
+	.main-header {
+		font-weight: 700;
+		display: block;
+	}
+		
+	.main-nav {
+		text-decoration: none;
+	}
+	a:hover {
+  		color: #a372a3;
+}
+	a:visited {
+  		color: #504789;
+}
+
 /* ---- Layout Containers ---- */
 
 /* ---- Page Elements ---- */
 
+	.profile-pic {
+		min-width: 100%
+		
+	}
 /* ================================= 
 	Media Queries
 ==================================== */
+
+@media (min-width: 7320px) {
+	.portfolio {
+		width: 90%;
+	}
+	
+}
