@@ -9,7 +9,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	color: #3a3a3a; 
 	text-align: center;
-	background-color: #edeaea;
+	background-color: #f2f2f2;
 	padding: 0;	
 	margin: 0;
 }
@@ -23,6 +23,10 @@ h3,
 a {
 	font-size: 1em;
 	color: #4c4b4b;
+}
+h3 {
+	font-weight: 400;
+	width: 90%;
 }
 
 /* ================================= 
@@ -64,61 +68,81 @@ a:visited {
 
 .page-section {
 	background-color: white;
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-bottom: 20px;
 }
 
 #home {
-	background-color: #edeaea;
+	background-color: #f2f2f2;
 }
 
 #contact {
 	display: block;
 	padding: 20px auto;
-	background-color: #edeaea;
+	background-color: #f2f2f2;
 }
 
 #skills {
-	background-color: #edeaea;
+	background-color: #f2f2f2;
 }
 .skill-list {
 	list-style: none;
 	padding: 0;
 }
+.footer-border {
+	border-top: .25px solid #bebdc1;
+	width: 90%;
+	margin: auto;
+	padding-bottom: 10px;
+
+}
 /* ---- Page Elements ---- */
 
+.portfolio-item img {
+	box-shadow: 4px 4px 20px #767677;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.portfolio-item {
+	padding-bottom: 20px;
+}
 /* ================================= 
 	Media Queries
 ==================================== */
 
 @media (max-width: 320px) {
 	.main-header {
-	display: block
-	text-align: center;
+		display: block
+		text-align: center;
 	}
 
 	.profile-pic {
-	width: 70%;
-	margin: 0 auto;
+		width: 70%;
+		margin: 0 auto;
 	}
 
 	.profile-info {
-	width: 90%;
-	text-align: center;
-	margin: 10px auto 20px auto;
+		width: 90%;
+		text-align: center;
+		margin: 10px auto 20px auto;
 
 	}
 	.page-section {
-	width: 100%;
+		width: 100%;
 	}
 
 	.portfolio-item {
-	width: 90%;
-	margin: 0 auto;
+		width: 90%;
+		margin: 0 auto;
 	}
 
 	.portfolio-item img {
-	width: 100%;
+		width: 100%;
+	}
+	.footer {
+		margin-top: 30px 30px;
+
 	}
 	.footer .main-nav {
 		display: none;	
@@ -128,10 +152,21 @@ a:visited {
 		font-size: .75em;
 		text-align: left;
 		float: left;
+		margin-left: 1em;
+		padding-bottom: 10px;
 	}
 	#top {
 		text-align: right;
 		font-size: .75em;
 		float: right;
+		margin-right: 1em;
 	}
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
 }
