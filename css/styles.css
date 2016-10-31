@@ -4,29 +4,25 @@
 * {
 	box-sizing: border-box;
 }
-  
-	body {
-  	font-family: 'Lato', sans-serif;
-  	color: #3a3a3a; 
-  	text-align: center;
-  	background-color: #edeaea;
-  	padding: 0;	
-  	margin: 0;
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #3a3a3a; 
+	text-align: center;
+	background-color: #edeaea;
+	padding: 0;	
+	margin: 0;
 }
 
-	h1 {
-		font-size: 1.5em;
-		color: #3a3a3a;		
+h1 {
+	font-size: 1.5em;
+	color: #3a3a3a;		
 }
-	h2,
-	h3,
-	a {
-		font-size: 1em;
-		color: #4c4b4b;
-	}
-
-	
-
+h2,
+h3,
+a {
+	font-size: 1em;
+	color: #4c4b4b;
 }
 
 /* ================================= 
@@ -35,36 +31,60 @@
 
 /* ---- Navigation ---- */
 
-	.main-header {
-		width: 100%;
-		font-weight: 700;
-		display: block;
-	}
-			
-	.main-nav {
+.main-header {
+	width: 100%;
+	font-weight: 700;
+	display: block;
+}
+		
+.main-nav {
 	list-style: none;
 	padding: 0;
-	}
-	
-	
-/* ---- Link Styles ---- */	
-	
-	a {
-	text-decoration: none;
-	}
-	a:hover {
-  		color: #a372a3;
 }
-	a:visited {
-  		color: #504789;
+
+.contact-item a {
+	font-weight: 700;
+	margin-left: 10px;
+}
+
+/* ---- Link Styles ---- */	
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	color: #a372a3;
+}
+a:visited {
+	color: #504789;
 }
 	
 
 /* ---- Layout Containers ---- */
 
-	.page-section {
-		background-color: white;
-	}
+.page-section {
+	background-color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#home {
+	background-color: #edeaea;
+}
+
+#contact {
+	display: block;
+	padding: 20px auto;
+	background-color: #edeaea;
+}
+
+#skills {
+	background-color: #edeaea;
+}
+.skill-list {
+	list-style: none;
+	padding: 0;
+}
 /* ---- Page Elements ---- */
 
 /* ================================= 
@@ -73,31 +93,45 @@
 
 @media (max-width: 320px) {
 	.main-header {
-		display: block
-		text-align: center;
+	display: block
+	text-align: center;
 	}
-	
+
 	.profile-pic {
 	width: 70%;
 	margin: 0 auto;
 	}
-	
+
 	.profile-info {
 	width: 90%;
 	text-align: center;
 	margin: 10px auto 20px auto;
-	
+
 	}
 	.page-section {
-		width: 100%;
+	width: 100%;
 	}
-	
+
 	.portfolio-item {
-		width: 90%;
-		margin: 0 auto;
+	width: 90%;
+	margin: 0 auto;
+	}
+
+	.portfolio-item img {
+	width: 100%;
+	}
+	.footer .main-nav {
+		display: none;	
 	}
 	
-	.portfolio-item img {
-		width: 100%;
+	.footer .student-name {
+		font-size: .75em;
+		text-align: left;
+		float: left;
+	}
+	#top {
+		text-align: right;
+		font-size: .75em;
+		float: right;
 	}
 }
