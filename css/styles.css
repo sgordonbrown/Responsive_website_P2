@@ -111,7 +111,7 @@ a:visited {
 	Media Queries
 ==================================== */
 
-@media (max-width: 320px) {
+/* @media (min-width: 320px) { */
 	.main-header {
 		display: block
 		text-align: center;
@@ -161,12 +161,67 @@ a:visited {
 		float: right;
 		margin-right: 1em;
 	}
-}
+/* } */
 
 @media (min-width: 768px) {
+	.student-name {
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.main-nav li {
+		display: inline-block;
+		margin-right: 12px; 
+		padding-bottom: 20px;		
+	}
 
+	.portfolio-item {    
+	  display: inline-block;
+	  width: 45%; 
+	  margin-right: -4px;
+	  vertical-align: top;
+	  padding-left: 1em;
+	  padding-right: 1em;
+
+	}
+	.page-section {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.profile-info {
+		text-align: left;
+		float: left;
+		margin-left: 2em;
+		padding-bottom: 10px;
+		width: 50%;
+	}
+	.profile-pic {
+		width: 35%;
+		float: right;
+		margin-right: 2em;
+		padding-bottom: 10px;
+	}
+	#top {
+		display: none;
+	}
+	.footer li {
+		display: inline-block;
+		float: left;
+	}
+	#skills li {
+		display: inline-block;
+		margin-right: 20px; 
+		padding-bottom: 10px;
+	}
 }
 
 @media (min-width: 1024px) {
-
+	.page-section {
+		width: 90%;
+		margin: 0 auto;
+	}
+		#top {
+		display: none;
+	}
 }
