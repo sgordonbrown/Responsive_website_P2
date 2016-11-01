@@ -15,18 +15,27 @@ body {
 }
 
 h1 {
-	font-size: 1.5em;
+
 	color: #3a3a3a;		
+	font-weight: 700;
 }
-h2,
-h3,
-a {
-	font-size: 1em;
+h2 {
+	padding-bottom: 20px;
+	font-weight: 400;
 	color: #4c4b4b;
 }
 h3 {
+	
 	font-weight: 400;
-	width: 90%;
+}
+p {
+	color: #706d6d;
+	font-weight: 400;
+}
+.clearfix::after {
+    content: "";
+	display: table;
+    clear: both;
 }
 
 /* ================================= 
@@ -39,29 +48,56 @@ h3 {
 	width: 100%;
 	font-weight: 700;
 	display: block;
+	text-align: center;
 }
 		
 .main-nav {
 	list-style: none;
 	padding: 0;
 }
+.main-nav li a {
+	line-height: 1.5em;
+}
 
 .contact-item a {
 	font-weight: 700;
 	margin-left: 10px;
 }
+.footer {
+	margin-top: 8px;
+
+}
+.footer .main-nav {
+	display: none;	
+}
+
+.footer .student-name {
+	font-size: .75em;
+	text-align: left;
+	float: left;
+	margin-left: 1em;
+	padding-bottom: 10px;
+}
+#top {
+	text-align: right;
+	font-size: .75em;
+	float: right;
+	margin-right: 1em;
+}
 
 /* ---- Link Styles ---- */	
 
-a {
+a:link {
 	text-decoration: none;
-}
-a:hover {
-	color: #a372a3;
+	color: #3a3a3a;
 }
 a:visited {
 	color: #504789;
 }
+a:hover {
+	color: #a372a3;
+}
+
 	
 
 /* ---- Layout Containers ---- */
@@ -74,16 +110,18 @@ a:visited {
 
 #home {
 	background-color: #f2f2f2;
+	
 }
 
 #contact {
 	display: block;
-	padding: 20px auto;
+	padding: 20px;
 	background-color: #f2f2f2;
 }
 
 #skills {
 	background-color: #f2f2f2;
+	line-height: 1.5em;
 }
 .skill-list {
 	list-style: none;
@@ -96,6 +134,31 @@ a:visited {
 	padding-bottom: 10px;
 
 }
+.profile-pic {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.profile-info {
+	width: 90%;
+	text-align: center;
+	margin: 10px auto 20px auto;
+
+}
+.page-section {
+	width: 100%;
+}
+
+.portfolio-item {
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.portfolio-item img {
+	width: 100%;
+}
+
 /* ---- Page Elements ---- */
 
 .portfolio-item img {
@@ -104,69 +167,14 @@ a:visited {
 	margin-bottom: 10px;
 }
 
-.portfolio-item {
-	padding-bottom: 20px;
-}
 /* ================================= 
 	Media Queries
 ==================================== */
 
-/* @media (min-width: 320px) { */
-	.main-header {
-		display: block
-		text-align: center;
-	}
-
-	.profile-pic {
-		width: 70%;
-		margin: 0 auto;
-	}
-
-	.profile-info {
-		width: 90%;
-		text-align: center;
-		margin: 10px auto 20px auto;
-
-	}
-	.page-section {
-		width: 100%;
-	}
-
-	.portfolio-item {
-		width: 90%;
-		margin: 0 auto;
-	}
-
-	.portfolio-item img {
-		width: 100%;
-	}
-	.footer {
-		margin-top: 30px 30px;
-
-	}
-	.footer .main-nav {
-		display: none;	
-	}
-	
-	.footer .student-name {
-		font-size: .75em;
-		text-align: left;
-		float: left;
-		margin-left: 1em;
-		padding-bottom: 10px;
-	}
-	#top {
-		text-align: right;
-		font-size: .75em;
-		float: right;
-		margin-right: 1em;
-	}
-/* } */
-
 @media (min-width: 768px) {
 	.student-name {
 		text-align: center;
-		padding-top: 20px;
+		margin-top: 20px;
 		padding-bottom: 20px;
 	}
 	.main-nav li {
@@ -177,7 +185,7 @@ a:visited {
 
 	.portfolio-item {    
 	  display: inline-block;
-	  width: 45%; 
+	  width: 48%; 
 	  margin-right: -4px;
 	  vertical-align: top;
 	  padding-left: 1em;
@@ -195,23 +203,36 @@ a:visited {
 		margin-left: 2em;
 		padding-bottom: 10px;
 		width: 50%;
+		font-size: 1.1em;
 	}
 	.profile-pic {
 		width: 35%;
 		float: right;
-		margin-right: 2em;
+		padding-right: 30px;
 		padding-bottom: 10px;
 	}
 	#top {
 		display: none;
 	}
-	.footer li {
+	
+	.footer	.main-nav {
 		display: inline-block;
-		float: left;
+		float: right;
+		margin-right: 2em;
+		padding-bottom: 10px;
 	}
+	
 	#skills li {
 		display: inline-block;
 		margin-right: 20px; 
+		padding-bottom: 10px;
+	}
+	.contact p {
+		width: 80%;
+	}
+	.footer .student-name {
+		font-size: 1em;
+		margin-left: 2em;
 		padding-bottom: 10px;
 	}
 }
@@ -221,7 +242,43 @@ a:visited {
 		width: 90%;
 		margin: 0 auto;
 	}
-		#top {
+	#top {
 		display: none;
 	}
+	.main-header {
+		padding-right: 100px;
+	}
+	.student-name {
+		float: left;
+		margin-top: 20px;
+		margin-left: 70px;
+		padding-bottom: 20px;
+
+	}
+	.main-nav li {
+		display: inline-block;
+		float: right;
+		margin-right: 15px; 
+		padding-bottom: 20px;	
+		margin-top: 20px;	
+	}
+	.portfolio-item {    
+		  display: inline-block;
+		  width: 30%; 
+		  margin-right: -4px;
+		  vertical-align: top;
+		  padding-left: 1em;
+		  padding-right: 1em;
+
+	}
+	.profile-pic {
+		width: 30%;
+		float: right;
+		margin-right: 2em;
+		padding-bottom: 10px;
+	}
+	.footer .main-nav {
+		padding-right: 10px;
+	}
+
 }
