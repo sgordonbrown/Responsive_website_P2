@@ -61,7 +61,6 @@ p {
 
 .contact-item a {
 	font-weight: 700;
-	margin-left: 10px;
 }
 .footer {
 	margin-top: 8px;
@@ -179,7 +178,7 @@ a:hover {
 	}
 	.main-nav li {
 		display: inline-block;
-		margin-right: 12px; 
+		margin-left: 12px; 
 		padding-bottom: 20px;		
 	}
 
@@ -246,21 +245,14 @@ a:hover {
 		display: none;
 	}
 	.main-header {
-		padding-right: 100px;
+		padding: 20px 80px 0 80px;
 	}
-	.student-name {
+	.main-header .student-name {
 		float: left;
-		margin-top: 20px;
-		margin-left: 70px;
-		padding-bottom: 20px;
-
 	}
-	.main-nav li {
-		display: inline-block;
+	.main-header  .main-nav {
 		float: right;
-		margin-right: 15px; 
-		padding-bottom: 20px;	
-		margin-top: 20px;	
+		margin-top: 32px;
 	}
 	.portfolio-item {    
 		  display: inline-block;
@@ -277,8 +269,8 @@ a:hover {
 		margin-right: 2em;
 		padding-bottom: 10px;
 	}
-	.footer .main-nav {
-		padding-right: 10px;
+	.footer  {
+		padding: 0 40px;
 	}
 
 }
